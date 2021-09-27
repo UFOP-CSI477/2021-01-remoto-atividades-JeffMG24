@@ -10,5 +10,5 @@
 
 ## [Projeto final:](./Projeto/README.md) 
 
-A defini.
+A definir.
 
