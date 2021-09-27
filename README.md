@@ -2,13 +2,13 @@
 
 ## Atualize os seus dados:
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Jefferson de Freitas Magalhães
+- Matrícula: 17.2.8315
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: 2021/1
+- Link para o seu GitHub: [https://github.com/UFOP-CSI477/2021-01-remoto-atividades-JeffMG24.git](https://github.com/JeffMG24)
 
 ## [Projeto final:](./Projeto/README.md) 
 
-Apresente uma breve descrição do seu projeto.
+A definir.
 
