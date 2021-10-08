@@ -20,7 +20,7 @@ Funcionalidades
 
 2 usuários:
 
-1 como administrador, onde ele cria a votação, finaliza a votação e ver o resultado
+1 como administrador, onde ele cria a votação, finaliza a votação e ver o resultado <br>
 1 como eleitor, inicia uma votação, escolhe o candidato, visualiza o resultado da votação, cadastro e login, realiza login
 
 Armazena tudo num banco de dados.
