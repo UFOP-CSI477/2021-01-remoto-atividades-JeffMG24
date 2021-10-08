@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+</head>
+<body>
+
+    <h1>Cadastro de Pessoas</h1>
+
+    <form method="POST" action="Cadastro.html">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" >
+        </div>
+
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+        </div>
+
+        <div>
+            <label for="identidade">Identidade:</label>
+            <input type="text" name="identidade" id="identidade">
+        </div>
+
+        <div>
+            <label for="contato">Contato:</label>
+            <input type="text" name="contato" id="contato">
+        </div>
+
+        <div>
+            <label>Gênero:</label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="NB">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="SR">
+                <label for="semresposta">Prefiro não informar</label>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <a href="PaginaPrincipal.html">Voltar</a>
+
+</body>
+</html>
