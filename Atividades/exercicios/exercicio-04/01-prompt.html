@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados pessoais</title>
+
+    <script>
+        'use script'
+
+        function Usuario(nome,idade, endereço) {
+
+            this.nome = nome;
+            this.idade = idade;
+            this.endereço = endereço;
+        }
+
+        function Dados() {
+            const nome = window.prompt('Nome:')
+            const idade = window.prompt('Idade:')
+            const endereço = window.prompt('Endereço:')
+
+            const usuario = new Usuario(nome, idade, endereço)
+            document.getElementById('nome').innerHTML = `Nome: ${usuario.nome}`
+            document.getElementById('idade').innerHTML = `Idade: ${usuario.idade}`
+            document.getElementById('endereço').innerHTML = `Endereço: ${usuario.endereço}`
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1> Dados pessoais</h1>
+    
+    <div>
+        <div id="nome">Nome</div>
+        <div id="idade">Idade</div>
+        <div id="endereço">Endereço</div>
+
+    </div>
+
+    <input type="button" value="Inserir Dados" onclick="Dados()">
+
+</body>
+</html>
