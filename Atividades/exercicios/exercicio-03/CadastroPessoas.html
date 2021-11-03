@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Sistema de Banco de Dados Web</h1>
+
+    <div class="opcoes">
+        <div class="botao-menu">
+            <img width="5%" src="./img/home.png" alt="Home"><br>
+            <a href="Home.html">Home</a><br><br>
+        </div>
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/estados.png" alt="Estados"><br>
+            <a href="Estados.html">Estados</a><br><br>
+        </div>
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/cidades.png" alt="Cidades"><br>
+            <a href="Cidades.html">Cidades</a><br><br>
+        </div>
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/produtos.png" alt="Produtos"><br>
+            <a href="Produtos.html">Produtos</a><br><br>
+        </div>
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/pessoas.png" alt="Pessoas"><br>
+            <a href="Pessoas.html">Pessoas</a><br><br>
+        </div>
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/compras.png" alt="Compras"><br>
+            <a href="Compras.html">Compras</a><br><br>
+        </div>
+
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/perfil.png" alt="Perfil"><br>
+            <a href="Perfil.html">Perfil</a><br><br>
+        </div>
+
+        <div class="botao-menu">
+            <img width="5%" src="./img/sair.png" alt="Sair"><br>
+            <a href="Sair.html">Sair</a><br><br>
+        </div>
+    </div>
+</header>
+<body>
+    <h1>Cadastro de Pessoas</h1>
+
+    <form class="cadastro-pessoas" method="POST" action="Cadastro.html">
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" >
+        </div>
+
+        <div class="campo">
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+
+        <div class="campo">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+        </div>
+
+        <div class="campo">
+            <label for="identidade">Identidade:</label>
+            <input type="text" name="identidade" id="identidade">
+        </div>
+
+        <div class="campo">
+            <label for="contato">Contato:</label>
+            <input type="text" name="contato" id="contato">
+        </div>
+
+        <div class="campo">
+            <label>Gênero:</label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="NB">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="SR">
+                <label for="semresposta">Prefiro não informar</label>
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <div>
+        <a href="PaginaPrincipal.html">Voltar</a>
+    </div>
+
+</body>
+</html>
