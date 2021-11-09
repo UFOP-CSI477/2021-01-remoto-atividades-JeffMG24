@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: #011627;
+	font-family: 'Montserrat', sans-serif !important;
+	color: #fdfffc;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 16px 0;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 0;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+input {
+	padding: 8px 16px;
+	width: 87%;
+	border-radius: 12px;
+	border: 0;
+}
+
+.botoes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: auto;
+	margin-top: 16px;
+}
+
+.botoes button {
+	padding: 12px 24px;
+	margin: 8px;
+	background: #fdfffc;
+	border: 0;
+	font-weight: bold;
+	font-size: 18px;
+	color: #011627;
+	width: 25%;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+button#igual {
+	width: 55%;
+}
+
+hr {
+	width: 100%;
+	margin: 12px 0;
+}
+
+span#calculo {
+	display: flex;
+	margin-top: 8px;
+}
+
+span#resultado {
+	display: flex;
+	margin: 12px 0;
+	font-size: 22px;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 4px;
+	font-size: 12px;
+	background: #011d33;
+	color: #a5a4a4;
+	pointer-events: none;
+}

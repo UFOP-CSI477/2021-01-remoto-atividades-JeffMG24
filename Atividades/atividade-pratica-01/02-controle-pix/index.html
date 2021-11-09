@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Pix | Jefferson de Freitas Magalhães</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+  <header class="header">
+    <h1>Controle de Pix</h1>
+  </header>
+
+  <main class="main">
+    <div class="pessoa-escolha">
+      <span>Você quer enviar ou receber um PIX?</span>
+      <div class="botoes-enviar-receber">
+        <button id="pessoa-enviar">Enviar</button>
+        <button id="pessoa-receber">Receber</button>
+      </div>
+    </div>
+
+    <div class="valor-transferencia">
+      <div id="texto">
+        <span>Qual o valor da transferência?<br/></span>
+        <span>Saldo disponível: <strong id='saldo-disponivel'>R$ 9999,00</strong></span>
+      </div>
+      <div id="input">
+        <span>R$</span>
+        <input type="number" placeholder="0,00" />
+      </div>
+      <button class="button-acao-proximo" type="button">Próximo</button>
+    </div>
+
+    <div class="resumo-envio" style="display: flex; flex-direction: column;">
+      <span id="valor-enviado"></span>
+      <span id="saldo-final-enviado"></span>
+    </div>
+    
+    <div class="pessoa-envio">
+      <h3>Para quem você deseja enviar?</h3>
+      <div id="pessoa-envio-texto">
+        <span>Escolha o tipo de chave:</span>
+        <div class="botoes-pix">
+          <button class="botao-pix" id="button-cpf">CPF</button>
+          <button class="botao-pix" id="button-cnpj">CNPJ</button>
+          <button class="botao-pix" id="button-email">E-mail</button>
+          <button class="botao-pix" id="button-celular">Celular</button>
+          <button class="botao-pix" id="button-aleatoria">Chave pix (aleatória)</button>
+        </div>
+        <div id="pessoa-envio-input">
+          <input id="chave-pix" type="text" placeholder="Chave">
+        </div>
+      </div>
+      <div class="finalizar-div">
+        <button class="button-acao-proximo" id="button-finalizar">Finalizar</button>
+        <span id="dados-banco"></span>
+      </div>
+    </div>
+
+    <div class="pessoa-receber">
+      <h3>Para receber, escaneie o código QR Code abaixo:</h3>
+      <img src="./assets/qrcode.png" alt="QRCode" />
+
+      <button>Confirmar recebimento</button>
+    </div>
+
+    <div class="resumo">
+      <div>
+        <span><strong id="valor-transferido">R$ 0,00</strong> transferido para <strong id="pessoa-transferido">Jefferson de Freitas Magalhães</strong></span>
+      </div>
+      <div>Saldo final: <strong id="saldo-pos-transferido">R$ 0,00</strong></div>
+    </div>
+
+    <hr />
+
+    <div class="historico-transacoes">
+      <h3>Histórico de transações</h3>
+      <span id="historico-vazio">Não existem transferências :(</span>
+      <ul class="historico-lista">
+
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+      <span>Criado por Jefferson de Freitas Magalhães</span>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

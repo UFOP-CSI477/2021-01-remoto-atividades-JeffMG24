@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas | Jefferson de Freitas Magalhães</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Conversor de Moedas</h1>
+  </header>
+  <div class="loading">
+    <img src="./assets/Spinner-0.4s.svg" alt="Loading">
+  </div>
+  <main>
+    <div class="valor-para">
+      <span>Digite o valor</span>
+      <input type="number" placeholder="0,00">
+    </div>
+    <div class="escolha-moeda">
+      <span>Escolha a combinação de moedas</span>
+      <select name="moedas" id="moedas-origem"></select>
+    </div>
+    <!-- <div class="escolha-moeda">
+      <span>Escolha a moeda de destino</span>
+      <select name="moedas" id="moedas-destino"></select>
+    </div> -->
+    <div class="converter">
+      <button>Converter</button>
+    </div>
+    <hr />
+    <div class="loading-conversao">
+      <img src="./assets/Spinner-0.4s.svg" alt="Loading">
+    </div>
+    <div class="dados-conversao">
+      <h3>Convertendo FULANO em CICLANO:</h3>
+      <div class="conversao-preco">
+        <div class="dado">
+          <strong>Preço de compra:</strong>
+          <span id="preco-compra"></span>
+        </div>
+        <div class="dado">
+          <strong>Preço de venda:</strong>
+          <span id="preco-venda"></span>
+        </div>
+        <div class="dado">
+          <strong>Valor convertido:</strong>
+          <span id="valor-convertido"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>Criado por Jefferson de Freitas Magalhães</span>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: #011627;
+	font-family: 'Montserrat', sans-serif !important;
+	color: #fdfffc;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 16px 0;
+}
+
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80vh;
+}
+
+.loading img {
+	width: 50px;
+	height: 50px;
+}
+
+.loading-conversao {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100px;
+}
+
+.loading-conversao img {
+	width: 50px;
+	height: 50px;
+}
+
+main {
+	display: none;
+	flex-direction: column;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 64px;
+	padding: 0 16px;
+	font-size: 18px;
+}
+
+.valor-para {
+	display: flex;
+	flex-direction: column;
+}
+
+.valor-para input {
+	margin: 8px 0;
+	padding: 12px;
+	border: 0;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+.escolha-moeda {
+	display: flex;
+	flex-direction: column;
+	margin-top: 12px;
+}
+
+.escolha-moeda select {
+	border: 0;
+	padding: 12px;
+	font-size: 16px;
+	margin: 8px 0;
+	font-weight: bold;
+}
+
+.escolha-moeda select {
+	border: 0;
+	padding: 12px;
+	font-size: 16px;
+	margin: 8px 0;
+	font-weight: bold;
+	border-radius: 8px;
+}
+
+hr {
+	margin: 32px 0;
+}
+
+.converter {
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 12px;
+}
+
+.converter > button {
+	border: 0;
+	padding: 16px;
+	border-radius: 8px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.dados-conversao {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.dados-conversao h3 {
+	margin: 0 0 12px;
+}
+
+.dado > strong {
+	display: flex;
+	margin: 8px 0;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 4px;
+	font-size: 12px;
+	background: #011d33;
+	color: #a5a4a4;
+	pointer-events: none;
+}

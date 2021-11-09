@@ -1,0 +1,289 @@
+/* Global */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: #1c1c1c;
+	font-family: 'Montserrat', sans-serif !important;
+	color: #fff;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* Principal */
+.body {
+	height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+}
+
+/*  Header */
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 100%;
+}
+
+.header h1 {
+	font-size: 22px;
+	color: #fff;
+}
+
+/* Main */
+.main {
+	height: calc(100vh - 48px - 28px);
+	padding: 0 16px;
+	max-width: 600px;
+}
+
+@media (min-width: 768px) {
+	.main {
+		margin: 0 auto;
+	}
+}
+
+.show {
+	display: flex;
+	opacity: 1;
+}
+
+.hide {
+	display: none;
+	opacity: 0;
+}
+
+.button-acao-proximo {
+	border: 0;
+	width: 237px;
+	margin: 8px 0;
+	height: 24px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #efa00b;
+}
+
+.valor-transferencia {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 8px 0;
+}
+
+div#texto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+div#texto span:not(:first-child) {
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+div#input {
+	background: #fff;
+	color: #000;
+	font-size: 14px;
+	padding: 0 8px;
+	margin-top: 8px;
+	width: 237px;
+	border-radius: 8px;
+}
+
+div#input input {
+	border: 0;
+	height: 32px;
+}
+
+.pessoa-escolha {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 8px;
+}
+
+.pessoa-escolha #valor-enviado {
+	margin: 4px 0;
+	font-size: 14px;
+}
+
+.pessoa-escolha #saldo-final-enviado {
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+
+.pessoa-escolha > div > button {
+	border: 0;
+	padding: 8px;
+	border-radius: 8px;
+	margin-top: 8px;
+}
+
+.pessoa-envio {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 16px;
+}
+
+.pessoa-envio #valor-enviado {
+	font-size: 14px;
+	margin: 2px 0 16px;
+}
+
+.pessoa-envio h3 {
+	margin-bottom: 4px;
+}
+
+div#pessoa-envio-texto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.botoes-pix {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+button.botao-pix {
+	padding: 6px;
+	border-radius: 4px;
+	border: 0;
+	font-weight: bold;
+	background: #fff;
+	margin: 4px;
+}
+
+div#pessoa-envio-texto span {
+	margin-bottom: 8px;
+}
+
+div#pessoa-envio-input input {
+	border: 0;
+	padding: 8px;
+	border-radius: 8px;
+	margin: 8px 0;
+	width: 237px;
+}
+
+div.finalizar-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+button#button-finalizar {
+	width: 237px;
+}
+
+.pessoa-receber {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 16px 0;
+}
+
+.pessoa-receber img {
+	margin: 16px 0;
+	width: 200px;
+	height: 200px;
+	pointer-events: none;
+}
+
+.pessoa-receber button {
+	border: 0;
+	padding: 8px;
+	background: #efa00b;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.resumo {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	margin: 8px 0;
+}
+
+.resumo div:not(:first-child) {
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+hr {
+	margin: 16px 0;
+}
+
+.historico-transacoes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 32px;
+}
+
+ul.historico-lista {
+	/* margin-top: 4px; */
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-height: 310px;
+	overflow-y: scroll;
+	padding: 16px;
+}
+
+span#historico-vazio {
+	margin: 8px 0;
+}
+
+.historico-item {
+	display: flex;
+	flex-direction: column;
+	margin-top: 8px;
+}
+
+.historico-item span {
+	line-height: 20px;
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 28px;
+	background: #222222;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.footer span {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #b6b6b6;
+	font-weight: bold;
+}
